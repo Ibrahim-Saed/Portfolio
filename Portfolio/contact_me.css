@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+nav{
+    display: flex;
+    background-color: #00A9FF;
+    align-items: center;
+    height: 5em;
+    justify-content: space-between;
+}
+nav li, a{
+    list-style-type: none;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav a{
+    text-decoration: none;
+    border: 1px white solid;
+    padding: 10px;
+    border-radius: 10%;
+    background-color: white;
+    color: #00A9FF;
+    position: relative;
+    font-size: 1.2em;
+}
+nav li:nth-of-type(1){
+    padding-left: 20px;
+    font-size: 2em;
+}
+header, .contact, button{
+    background-color: #00A9FF;
+}
+.title, a, .contact, button{
+    color: white;
+}
+.title, .nav, .contact > textarea, .contact > button, input, label, .details{
+    display: flex;
+    flex-wrap: wrap;
+}
+.title, .nav, .logo, .socials{
+    position: relative;
+}
+.title{
+    text-decoration: none;
+    font-size: 3em;
+    align-items: center;
+    flex-wrap: wrap;
+    right: -150px;
+    width: 500px;
+}
+.nav{
+    width: 350px;
+    justify-content: space-evenly;
+    align-items: center;
+    right: -96.5em;
+    top: -6em;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.socials{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+p{
+    text-align: center;
+    font-size: 1.2em;
+}
+.contact{
+    width: 50em;
+    height: 27em;
+    margin: 5em auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+.contact > textarea{
+    margin: 0 auto;
+    border: solid 1px white;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+.contact > button{
+    margin: 15px auto;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    color: #00A9FF;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+}
+button:hover{
+    border: 3px solid white;
+}
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 1.1em;
+    justify-content: center;
+    padding: 15px;
+}
+input{
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 15em;
+    display: inline-block;
+    margin: 5px;
+}
+
+@media(max-width: 55em){
+    .contact{
+        width: 35em;
+        transition: 2s;
+        height: 22em;
+    }
+    .details{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-size: 1.1em;
+        justify-content: center;
+        padding: 0px 5px;
+        margin: 5px;
+    }
+}
